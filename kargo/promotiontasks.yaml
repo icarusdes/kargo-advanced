@@ -58,10 +58,10 @@ spec:
       path: ./out
   # Request a sync of the ArgoCD Application to apply the changes from the
   # commit.
-  - uses: argocd-update
-    config:
-      apps:
-      - name: guestbook-advanced-${{ ctx.stage }}
-        sources:
-        - repoURL: ${{ vars.repoURL }}
-          desiredRevision: ${{ task.outputs['commit'].commit }}
+  # - uses: argocd-update
+  #   config:
+  #     apps:
+  #     - name: guestbook-advanced-${{ ctx.stage }}
+  #       sources:
+  #       - repoURL: ${{ vars.repoURL }}
+  #         desiredRevision: ${{ task.outputs['commit'].commit }}

@@ -14,7 +14,7 @@ spec:
         app: guestbook
     spec:
       containers:
-      - image: ghcr.io/icarusdes/guestbook:latest
+      - image: us-east4-docker.pkg.dev/sap-ems-gap-sandbox/ghcr/icarusdes/guestbook-advanced:latest
         name: guestbook
         ports:
         - name: http

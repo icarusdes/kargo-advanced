@@ -10,7 +10,7 @@ spec:
   - name: branch
     value: main
   - name: image
-    value: ghcr.io/icarusdes/guestbook
+    value: us-east4-docker.pkg.dev/sap-ems-gap-sandbox/ghcr/icarusdes/guestbook-advanced
   steps:
   # Clone the Git repository that contains the Kustomize configuration
   # to the ./src directory, and the environment configuration to ./out.

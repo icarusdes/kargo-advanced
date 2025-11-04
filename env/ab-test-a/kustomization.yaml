@@ -4,4 +4,4 @@ kind: Kustomization
 resources:
 - ../../base
 
-namespace: guestbook-ab-test-a
+namespace: guestbook-advanced-ab-test-a

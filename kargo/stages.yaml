@@ -9,7 +9,7 @@ spec:
   requestedFreight:
   - origin:
       kind: Warehouse
-      name: guestbook
+      name: guestbook-advanced
     sources:
       direct: true
   promotionTemplate:
@@ -30,7 +30,7 @@ spec:
   requestedFreight:
   - origin:
       kind: Warehouse
-      name: guestbook
+      name: guestbook-advanced
     sources:
       stages:
       - dev
@@ -52,7 +52,7 @@ spec:
   requestedFreight:
   - origin:
       kind: Warehouse
-      name: guestbook
+      name: guestbook-advanced
     sources:
       stages:
       - staging
@@ -79,7 +79,7 @@ spec:
   requestedFreight:
   - origin:
       kind: Warehouse
-      name: guestbook
+      name: guestbook-advanced
     sources:
       stages:
       - staging
@@ -107,7 +107,7 @@ spec:
   requestedFreight:
   - origin:
       kind: Warehouse
-      name: guestbook
+      name: guestbook-advanced
     sources:
       stages:
       - ab-test-a
@@ -124,7 +124,7 @@ spec:
   requestedFreight:
   - origin:
       kind: Warehouse
-      name: guestbook
+      name: guestbook-advanced
     sources:
       stages:
       - prod
@@ -146,7 +146,7 @@ spec:
   requestedFreight:
   - origin:
       kind: Warehouse
-      name: guestbook
+      name: guestbook-advanced
     sources:
       stages:
       - prod
@@ -168,7 +168,7 @@ spec:
   requestedFreight:
   - origin:
       kind: Warehouse
-      name: guestbook
+      name: guestbook-advanced
     sources:
       stages:
       - prod

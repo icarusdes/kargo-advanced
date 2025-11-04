@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: ApplicationSet
 metadata:
-  name: guestbook
+  name: guestbook-advanced
   namespace: argocd
 spec:
   generators:
@@ -12,16 +12,16 @@ spec:
       - path: env/*
   template:
     metadata:
-      name: guestbook-{{path.basename}}
+      name: guestbook-advanced-{{path.basename}}
       annotations:
         kargo.akuity.io/authorized-stage: kargo-advanced:{{path.basename}}
     spec:
       destination:
-        namespace: guestbook-{{path.basename}}
+        namespace: guestbook-advanced-{{path.basename}}
         # Specify either a cluster destination name or server address:
         name: in-cluster
         # server: https://REPLACEME
-      project: guestbook
+      project: guestbook-advanced
       source:
         path: ./
         repoURL: https://github.com/icarusdes/kargo-advanced.git

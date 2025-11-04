@@ -1,7 +1,7 @@
 apiVersion: kargo.akuity.io/v1alpha1
 kind: Warehouse
 metadata:
-  name: guestbook
+  name: guestbook-advanced
   namespace: kargo-advanced
 spec:
   subscriptions:

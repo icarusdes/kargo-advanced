@@ -63,10 +63,10 @@ spec:
           name: promote
   verification:
     analysisTemplates:
-    - name: pokemon-xp
+    - name: success-rate
     args:
-    - name: pokemon
-      value: pikachu
+    - name: service-name
+      value: guestbook-advanced-ab-test-a
 ---
 apiVersion: kargo.akuity.io/v1alpha1
 kind: Stage
@@ -91,10 +91,10 @@ spec:
 
   verification:
     analysisTemplates:
-    - name: pokemon-xp
+    - name: success-rate
     args:
-    - name: pokemon
-      value: charizard
+    - name: service-name
+      value: guestbook-advanced-ab-test-b
 ---
 apiVersion: kargo.akuity.io/v1alpha1
 kind: Stage

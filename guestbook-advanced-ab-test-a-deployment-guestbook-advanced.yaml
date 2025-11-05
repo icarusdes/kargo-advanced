@@ -15,7 +15,7 @@ spec:
         app: guestbook-advanced
     spec:
       containers:
-      - image: us-east4-docker.pkg.dev/sap-ems-gap-sandbox/ghcr/icarusdes/guestbook-advanced:v0.0.1
+      - image: us-east4-docker.pkg.dev/sap-ems-gap-sandbox/ghcr/icarusdes/guestbook-advanced:v0.0.2
         name: guestbook-advanced
         ports:
         - containerPort: 3000

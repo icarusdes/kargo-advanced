@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: guestbook-advanced
+  namespace: guestbook-advanced-ab-test-b
+spec:
+  replicas: 1
+  revisionHistoryLimit: 3
+  selector:
+    matchLabels:
+      app: guestbook-advanced
+  template:
+    metadata:
+      labels:
+        app: guestbook-advanced
+    spec:
+      containers:
+      - image: us-east4-docker.pkg.dev/sap-ems-gap-sandbox/ghcr/icarusdes/guestbook-advanced:v0.0.1
+        name: guestbook-advanced
+        ports:
+        - containerPort: 3000
+          name: http

@@ -7,3 +7,12 @@ resources:
 - guestbook-ns.yaml
 - guestbook-deploy.yaml
 - guestbook-svc.yaml
+
+patches:
+  - target:
+      kind: Namespace
+      name: guestbook-advanced
+    patch: |
+      - op: add
+        path: /metadata/labels/istio-injection
+        value: "enabled"

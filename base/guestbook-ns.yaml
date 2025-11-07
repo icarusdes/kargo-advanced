@@ -3,4 +3,4 @@ kind: Namespace
 metadata:
   name: guestbook-advanced
   labels:
-    istio-injection: "enabled"
+    app: guestbook

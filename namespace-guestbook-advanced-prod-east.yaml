@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  labels:
+    app: guestbook
+    istio-injection: enabled
+  name: guestbook-advanced-prod-east

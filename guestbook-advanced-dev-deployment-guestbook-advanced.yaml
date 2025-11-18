@@ -18,7 +18,7 @@ spec:
       - env:
         - name: PROMETHEUS_METRICS
           value: enable
-        image: us-east4-docker.pkg.dev/sap-ems-gap-sandbox/ghcr/icarusdes/guestbook-advanced:v0.0.4
+        image: us-east4-docker.pkg.dev/sap-ems-gap-sandbox/ghcr/icarusdes/guestbook-advanced:v0.0.5
         name: guestbook-advanced
         ports:
         - containerPort: 3000

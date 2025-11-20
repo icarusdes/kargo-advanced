@@ -16,7 +16,7 @@ spec:
     failureLimit: 3
     provider:
       web:
-        url: https://pokeapi.co/api/v2/pokemon/{{args.pokemon}}
+        url: http://pokeapi.pokeapi.svc.cluster.local:80/api/v2/pokemon/{{args.pokemon}}
         jsonPath: "{$.base_experience}"
 
 --- 
